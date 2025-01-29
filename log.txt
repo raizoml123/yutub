@@ -179,3 +179,5 @@
 2025-01-29 07:19:29,093 - warning - Unreachable or unsupported URL: https://www.youtube.com/@disneyxd/live
 2025-01-29 07:32:53,579 - debug - URL Streams https://www.youtube.com/disneyxd/live: {}
 2025-01-29 07:32:53,579 - warning - Unreachable or unsupported URL: https://www.youtube.com/disneyxd/live
+2025-01-29 07:41:13,214 - debug - URL Streams https://www.youtube.com/@disneyxd/live: {}
+2025-01-29 07:41:13,214 - warning - Unreachable or unsupported URL: https://www.youtube.com/@disneyxd/live
