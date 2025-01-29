@@ -175,3 +175,5 @@
 2025-01-29 06:35:11,735 - error - URL Error No PluginError http://abcnew.site:8880/D12m2692/94245219/49978#checkedby:alliptvlinks.com: 
 2025-01-29 06:35:11,937 - error - URL Error No PluginError http://abcnew.site:8880/D12m2668/24493676/2485#checkedby:alliptvlinks.com: 
 2025-01-29 06:35:11,937 - debug - URL ends with a valid streaming suffix: https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
+2025-01-29 07:19:29,093 - debug - URL Streams https://www.youtube.com/@disneyxd/live: {}
+2025-01-29 07:19:29,093 - warning - Unreachable or unsupported URL: https://www.youtube.com/@disneyxd/live
