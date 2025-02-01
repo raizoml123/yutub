@@ -64,10 +64,23 @@ if __name__ == "__main__":
         print("ERROR: GITHUB_TOKEN not set!")
         exit(1)
 
-    tree1 = fetch_xml('https://i.mjh.nz/PlutoTV/cl.xml')
-    tree2 = fetch_xml('https://i.mjh.nz/Plex/mx.xml')
+    tree1 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/epg.xml')
+    tree2 = fetch_xml('https://raw.githubusercontent.com/azimabid00/epg/refs/heads/main/astro_epg.xml')
+    tree3 = fetch_xml('https://tvxray-cdn2.eu-central-amazonaws.com/xmltv.php?username=freebasic&password=m%40laysia887&prev_days=0&next_days=2')
+    tree4 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/astro.xml')
+    tree5 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/indonesia.xml')
+    tree6 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/rtmklik.xml')
+    tree7 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/singapore.xml')
+    tree8 = fetch_xml('https://raw.githubusercontent.com/AqFad2811/epg/main/unifitv.xml')
+    tree9 = fetch_xml('https://www.bevy.be/bevyfiles/singaporepremium.xml.gz')
+    tree10 = fetch_xml('https://www.bevy.be/bevyfiles/indonesiapremium3.xml.gz')
+    tree11 = fetch_xml('https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz')
+    tree12 = fetch_xml('https://raw.githubusercontent.com/matthuisman/i.mjh.nz/refs/heads/master/all/epg.xml')
+    tree13 = fetch_xml('https://raw.githubusercontent.com/azimabid00/epg/refs/heads/main/unifi_epg.xml')
 
-    merged_tree = merge_trees(tree1, tree2)
+    
+
+    merged_tree = merge_trees(tree1, tree2, tree3, tree4, tree5, tree6, tree7, tree8, tree9, tree10, tree11, tree12, tree13)
     merged_xml = ET.tostring(merged_tree.getroot(), encoding='utf-8').decode('utf-8')
 
     write_to_github(merged_xml, token)
